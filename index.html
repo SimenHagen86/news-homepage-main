@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="text-[15px]/7 font-inter">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,40 +17,72 @@
     <title>Frontend Mentor | News homepage</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
-  <body>
-    <header class="flex justify-between p-4">
-      <div>
-        <img src="assets/images/logo.svg" alt="" />
-      </div>
+  <body class="min-h-full">
+    <header class="flex justify-between w-full p-4">
+      <section class="">
+        <div>
+          <img
+            class="items-center mt-2 h-7"
+            src="assets/images/logo.svg"
+            alt="Logo"
+          />
+        </div>
 
-      <nav class="space-x-10">
-        <a href="#"> Home </a>
-        <a href="#"> New </a>
-        <a href="#"> Popular </a>
-        <a href="#"> Trending </a>
-        <a href="#"> Categories </a>
-      </nav>
+        <button
+          id="mobile-menu-btn-open"
+          class="absolute right-6 top-7 sm:hidden"
+        >
+          <img src="assets/images/icon-menu.svg" alt="" />
+        </button>
+
+        <nav
+          id="primary-nav"
+          class="items-center hidden gap-6 ml-auto flex-end space-around sm:flex"
+          aria-label="Primary navigation"
+        >
+          <a href="#"> Home </a>
+          <a href="#"> New </a>
+          <a href="#"> Popular </a>
+          <a href="#"> Trending </a>
+          <a href="#"> Castegories </a>
+        </nav>
+      </section>
+      <section
+        id="mobile-menu"
+        class="absolute top-0 right-0 p-6 ml-auto w-4/6 shadow-2xl shadow-black bg-Off-white h-full hidden"
+        aria-label="Mobile menu"
+      >
+        <nav class="flex flex-col gap-6">
+          <img
+            class="w-7 self-end"
+            src="assets/images/icon-menu-close.svg"
+            alt=""
+          />
+          <a class="pt-10" href="#"> Home </a>
+          <a href="#"> New </a>
+          <a href="#"> Popular </a>
+          <a href="#"> Trending </a>
+          <a href="#"> Categories </a>
+        </nav>
+      </section>
     </header>
-    <main>
+    <main class="max-w-sm p-4 mx-auto sm:max-w-7xl">
       <section class="md:flex">
         <div class="">
-          <img src="assets/images/image-web-3-desktop.jpg" alt="" />
+          <img
+            class="object-cover h-80"
+            src="assets/images/image-web-3-desktop.jpg"
+            alt=""
+          />
           <div class="md:flex">
             <div>
-              <h1>The Bright Future of Web 3.0?</h1>
+              <h1 class="w-4/5 py-5 text-4xl font-extrabold">
+                The Bright Future of Web 3.0?
+              </h1>
             </div>
             <div>
-              <p>
+              <p class="text-Darkgrayishblue/80">
                 We dive into the next evolution of the web that claims to put
                 the power of the platforms back into the hands of the people.
                 But is it really fulfilling its promise?
@@ -78,6 +110,7 @@
           </p>
         </div>
       </section>
+
       <section class="flex flex-col">
         <div class="flex">
           <div>
@@ -92,17 +125,17 @@
             <p>What happens when old PCs are given modern upgrades?</p>
           </div>
         </div>
-          <div class="flex">
-            <div class="">
-              <img src="/assets/images/image-top-laptops.jpg" alt="" />
-            </div>
-            <div>
-              <p class="">02</p>
-              <h3><a href="#">Top 10 Laptops of 2022</a></h3>
-              <p>Our best picks for various needs and budgets.</p>
-            </div>
+        <div class="flex">
+          <div class="">
+            <img src="/assets/images/image-top-laptops.jpg" alt="" />
+          </div>
+          <div>
+            <p class="">02</p>
+            <h3><a href="#">Top 10 Laptops of 2022</a></h3>
+            <p>Our best picks for various needs and budgets.</p>
           </div>
         </div>
+
         <div class="flex">
           <div>
             <img src="/assets/images/image-gaming-growth.jpg" alt="" />
@@ -121,5 +154,7 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Simen Hagen</a>.
     </div>
+
+    <script src="main.js" type="module"></script>
   </body>
 </html>
