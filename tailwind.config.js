@@ -9,7 +9,7 @@ export default {
         'Off-white': 'hsl(36, 100%, 99%)',
         Grayishblue: 'hsl(233, 8%, 79%)',
         Darkgrayishblue: ' hsl(236, 13%, 42%)',
-        'Verydark blue': ' hsl(240, 100%, 5%)',
+        Verydarkblue: ' hsl(240, 100%, 5%)',
       },
     },
     fontFamily: {
