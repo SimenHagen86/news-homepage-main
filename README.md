@@ -52,7 +52,8 @@ having problems with the bottom part - to get the images right - feel like im ju
 
 ### Continued development
 
-try learning how to
+try learning how to deploy smoothly next time ,
+tried setting base - but think i need to create an build command in github actions
 
 ### Useful resources
 
